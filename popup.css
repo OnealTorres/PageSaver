@@ -1,0 +1,104 @@
+.button.outline {
+  border: 1px solid white;
+  color: #e1e7ef;
+}
+.button.outline:hover {
+  border: 1px solid #e6e2e2;
+  background: white;
+  color: #000;
+}
+.button {
+  width: 90px;
+  height: 40px;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  text-align: center;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.container {
+  min-width: 150px;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.menu {
+  display: grid;
+  grid-template-rows: repeat(4, 40px);
+  gap: 10px;
+}
+body {
+  font-family: "Roboto Slab", serif;
+  height: auto;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  width: 500px;
+  background-color: #232529 !important;
+}
+h3 {
+  margin-top: 10px !important;
+  color: white !important;
+  text-align: left;
+  font-size: 15px !important;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+.links {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  display: flex;
+  visibility: visible;
+  flex-direction: column;
+  height: 145px;
+  width: 300px;
+  background-color: white;
+  overflow-y: auto;
+}
+.node {
+  font-size: 15px;
+  font-size-adjust: auto;
+}
+.remove {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(148, 0, 0);
+  opacity: 0.7;
+  justify-content: center !important;
+  text-align: center;
+  font-size: 6px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  margin-right: 10px;
+  justify-self: center;
+  align-self: center;
+  vertical-align: middle;
+}
+.remove:hover {
+  background-color: rgb(70, 0, 0) !important;
+  color: white !important;
+}
+.create {
+  background-color: green;
+  width: 42px !important;
+}

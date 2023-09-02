@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Page Saver</title>
+  </head>
+  <body>
+    <h3><img class="icon" src="./images/icon.png" alt="" /> Page Saver</h3>
+    <div class="container">
+      <div class="menu">
+        <a
+          href="#"
+          id="btnSave"
+          title="Save all current pages"
+          class="button outline"
+        >
+          Save</a
+        >
+        <a
+          href="#"
+          id="btnOpen"
+          title="Open all saved pages"
+          class="button outline"
+          >Open</a
+        >
+        <a
+          href="#"
+          id="btnLinks"
+          title="Show all saved pages."
+          class="button outline"
+          >Links</a
+        >
+        <a
+          href="#"
+          id="btnCollect"
+          title="Show all saved collections of pages."
+          class="button outline"
+          >Collect</a
+        >
+      </div>
+      <div style="display: grid; grid-template-rows: auto auto; gap: 5px">
+        <div class="links"></div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: auto 50px;
+            margin-left: 10px;
+          "
+        >
+          <input
+            type="text"
+            id="collection-name"
+            style="width: 100%; border-radius: 10px; text-indent: 10px"
+            placeholder="Collection name..."
+          />
+          <a
+            style="justify-self: right"
+            href="#"
+            id="btnCreate"
+            title="Create new collection of pages."
+            class="button outline create"
+            >&plus;
+          </a>
+        </div>
+      </div>
+    </div>
+    <a style="display: none" class="node" href="" target="_blank"></a>
+    <button id="btnRemove" style="display: none" class="button outline remove">
+      X
+    </button>
+
+    <script src="background.js"></script>
+  </body>
+</html>
